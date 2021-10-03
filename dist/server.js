@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const app_1 = require("./app");
-const app = new app_1.App(9000, []);
-const dbUri = process.env.DB_URI || "'mongodb://localhost/app-starter";
-app.connectDB(dbUri);
+const config_1 = __importDefault(require("./app/config"));
+const app = new app_1.App(+config_1.default.port);
+app.connectDB(config_1.default.dbUri);
 app.listen();

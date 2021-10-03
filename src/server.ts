@@ -1,13 +1,12 @@
 import {App} from "./app";
+import config from "./app/config";
 
 
 const app = new App(
-    9000,
-    [],
+    +config.port,
 );
 
-const dbUri = process.env.DB_URI || "'mongodb://localhost/app-starter";
 
-app.connectDB(dbUri);
+app.connectDB(config.dbUri);
 
 app.listen();

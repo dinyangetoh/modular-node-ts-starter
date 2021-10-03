@@ -23,7 +23,7 @@ class App {
         this.apiPath = apiPath;
         this.app = (0, express_1.default)();
         this.routes();
-        // this.middleware(middleware);
+        this.middleware(middleware);
     }
     middleware(middlewares) {
         middlewares.forEach(middleware => {

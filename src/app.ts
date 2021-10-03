@@ -13,7 +13,7 @@ export class App {
     ) {
         this.app = express();
         this.routes();
-        // this.middleware(middleware);
+        this.middleware(middleware);
     }
 
     private middleware(middlewares: any[]) {
