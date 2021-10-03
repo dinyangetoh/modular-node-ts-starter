@@ -1,0 +1,33 @@
+{
+  "name": "modular-node-ts-starter",
+  "version": "1.0.0",
+  "description": "Modular nodejs starter project with Typescript",
+  "main": "app.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon dist/server.js",
+    "watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "ts",
+    "modular"
+  ],
+  "author": "David Inyang-Etoh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.8",
+    "multer": "^1.4.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^16.10.2",
+    "nodemon": "^2.0.12"
+  }
+}
